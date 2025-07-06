@@ -35,7 +35,7 @@ Use brief field names and keep content concise.`;
 
     try {
       setLoading(true); // Start loading
-      const res = await axios.post("http://localhost:3000/api/content", {
+      const res = await axios.post("https://trip-planer-backend.onrender.com/api/content", {
         question: prompt,
       });
 
