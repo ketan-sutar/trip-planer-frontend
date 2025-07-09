@@ -119,22 +119,24 @@ const Login = () => {
           )}
 
           {/* Email input */}
-          <input
-            type="email"
-            placeholder="Email"
-            className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+          <form>
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
 
-          {/* Password input */}
-          <input
-            type="password"
-            placeholder="Password"
-            className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+            {/* Password input */}
+            <input
+              type="password"
+              placeholder="Password"
+              className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </form>
 
           {/* Conditional Register or Login button */}
           {isRegistering ? (
