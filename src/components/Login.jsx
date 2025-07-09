@@ -92,7 +92,7 @@ const Login = () => {
         </div>
 
         {/* Form inputs */}
-        <div className="space-y-4">
+        <form className="space-y-4">
           {isRegistering && (
             <>
               {/* Name input */}
@@ -192,7 +192,7 @@ const Login = () => {
               Continue with Google
             </span>
           </button>
-        </div>
+        </form>
       </div>
     </div>
   );
