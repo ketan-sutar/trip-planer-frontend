@@ -119,7 +119,7 @@ const Login = () => {
           )}
 
           {/* Email input */}
-          <form>
+          <div>
             <input
               type="email"
               placeholder="Email"
@@ -136,12 +136,13 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-          </form>
+          </div>
 
           {/* Conditional Register or Login button */}
           {isRegistering ? (
             <>
               <button
+                type="button"
                 onClick={handleRegister}
                 className="w-full bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg font-semibold transition-all duration-200"
               >
@@ -160,6 +161,7 @@ const Login = () => {
           ) : (
             <>
               <button
+                type="button"
                 onClick={handleLogin}
                 className="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-3 rounded-lg font-semibold transition-all duration-200"
               >
@@ -186,6 +188,7 @@ const Login = () => {
 
           {/* Google login button */}
           <button
+            type="button"
             onClick={handleGoogleLogin}
             className="w-full flex items-center justify-center gap-3 border border-gray-300 py-3 rounded-lg hover:bg-gray-50 transition-all duration-200"
           >
